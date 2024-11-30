@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quote - Samati Catering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Get a Quotation</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="getquote.html">Get Quote</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Request a Quote</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="event">Event Type:</label>
+                <select id="event" name="event">
+                    <option value="wedding">Wedding</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="date">Event Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="5" placeholder="Tell us more about your event..."></textarea>
+                
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Samati Catering. All rights reserved.</p>
+    </footer>
+</body>
+</html>

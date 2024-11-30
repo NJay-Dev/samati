@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+  font-family: 'Anton',sans-serif; 
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #a8e6cf, #dcedc1, #ff8b94); /* Green to pink */
+  color: #333;
+}
+
+header {
+
+  background-color: #82b1ff; /* Sky blue */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  /*border-bottom: 5px solid #ff8b94; /* Pink border */
+}
+
+header h1 {
+  font-family: 'Anton', cursive; /* Apply Lobster font to header */
+  font-size: 3rem;
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /*background-color: #aed581; /* Light green */
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #82b1ff; /* Sky blue hover */
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: linear-gradient(to right, #a8e6cf, #dcedc1, #ff8b94); /* Pink footer */
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /*border-top: 5px solid #aed581; /* Green border */
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #82b1ff; /* Sky blue */
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #aed581; /* Green */
+}
+
+form input, form select, form textarea, form button {
+  padding: 10px;
+  border: 2px solid #aed581; /* Green border */
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #ff8b94; /* Pink button */
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #82b1ff; /* Sky blue hover */
+}
+
+/* About Us & Portfolio Styling */
+.about-us p, .portfolio p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 16px; /* Space between gallery items */
+}
+
+.gallery-item {
+  overflow: hidden; /* Ensure images are contained within the item */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any space below images */
+}
+
+/* Social media icon container */
+.social-media {
+  margin-top: 10px;
+}
+
+/* Social media links styling */
+.social-icon {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px; /* Icon size */
+}
+
+.social-icon i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.social-icon:hover {
+  text-decoration: underline;
+  color: #ddd; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  form {
+      gap: 10px;
+  }
+}
